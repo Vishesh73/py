@@ -1,16 +1,3 @@
-# import azure.functions as func
-# import logging
-
-# app = func.FunctionApp()
-
-# @app.blob_trigger(arg_name="blob", path ="logs/{name}",
-#                                connection="AzureWebJobsStorage") 
-# def blob_trigger(blob: func.InputStream):
-#     logging.info(f"Python blob trigger function processed blob"
-#                 f"Name: {blob.name}"
-#                 f"Blob Size: {blob.length} bytes")
-
-
 import azure.functions as func
 import logging
 import base64
