@@ -11,14 +11,14 @@ import azure.functions as func
 # Provide your Azure Blob Storage connection string here
 blob_service_client = BlobServiceClient.from_connection_string(os.environ["AzureWebJobsStorage"])
 # Or you can directly specify it like:
-# blob_service_client = BlobServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=mystorage12390;AccountKey=qgLgz4sxQNoL68vFiOErOugxPnenIUGZSsCoUrUS5spCn8t/cPWOUXz6cDW9PiP/b7gDqDw3f9MK+AStR/3s9A==;EndpointSuffix=core.windows.net")
+
 
 # Initialize Table Service Client
 # Provide your Azure Table Storage connection string here
 table_service_client = TableServiceClient.from_connection_string(os.environ["AzureTableStorageConnectionString"])
 
 # Or you can directly specify it like:
-# table_service_client = TableServiceClient.from_connection_string("DefaultEndpointsProtocol=https;AccountName=mystorage12390;AccountKey=qgLgz4sxQNoL68vFiOErOugxPnenIUGZSsCoUrUS5spCn8t/cPWOUXz6cDW9PiP/b7gDqDw3f9MK+AStR/3s9A==;EndpointSuffix=core.windows.net")
+
 
 # Define the Blob Container name (replace with your actual container name)
 BLOB_CONTAINER_NAME = "$logs"  # e.g., "$logs" container
