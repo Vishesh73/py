@@ -19,8 +19,10 @@ from azure.data.tables import TableServiceClient, TableEntity
 import os
 
 # Initialize the Table Service Client for Table Storage
+
 # You can fetch the connection string from environment variables for better security
-TABLE_STORAGE_CONNECTION_STRING = os.getenv("AzureTableStorageConnectionString", "DefaultEndpointsProtocol=https;AccountName=mystorage12390;AccountKey=qgLgz4sxQNoL68vFiOErOugxPnenIUGZSsCoUrUS5spCn8t/cPWOUXz6cDW9PiP/b7gDqDw3f9MK+AStR/3s9A==;EndpointSuffix=core.windows.net")
+TABLE_STORAGE_CONNECTION_STRING = os.getenv("AzureTableStorageConnectionString")
+# TABLE_STORAGE_CONNECTION_STRING = os.getenv("AzureTableStorageConnectionString", "DefaultEndpointsProtocol=https;AccountName=mystorage12390;AccountKey=qgLgz4sxQNoL68vFiOErOugxPnenIUGZSsCoUrUS5spCn8t/cPWOUXz6cDW9PiP/b7gDqDw3f9MK+AStR/3s9A==;EndpointSuffix=core.windows.net")
 TABLE_NAME = "mytable"  # Specify your table name
 
 # Initialize the Function App and blob trigger
